@@ -1,0 +1,31 @@
+% Identification
+
+\ProvidesPackage{math_shortcuts}
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+
+
+% Dependencies
+
+\RequirePackage{graphicx}
+
+
+% Commands
+
+
+% Shortcut for bold text
+\NewDocumentCommand
+    {\bol}
+    {m}
+    {\textbf{#1}}
+
+% Shortcut for "Probability of"
+\NewDocumentCommand
+    {\pof}
+    {m}
+    {\textbf{P}(#1)}
+
+% Shortcut for "Partial derivative of #1 wrt #2"
+\NewDocumentCommand
+    {\dof}
+    {mm}
+    {\frac{ \partial #1 }{ \partial #2}}
